@@ -16,24 +16,7 @@
 			<h1 class="mui-title">{{title}}</h1>
 			<a class="mui-icon mui-icon-search mui-pull-right"></a>
 		</header>
-		<!--<nav class="mui-bar mui-bar-tab mui-bg">
-			<a class="mui-tab-item mui-active">
-				<span class="mui-icon mui-icon-home"></span>
-				<span class="mui-tab-label">首页</span>
-			</a>
-			<a class="mui-tab-item">
-				<span class="mui-icon mui-icon-compose"></span>
-				<span class="mui-tab-label">新闻</span>
-			</a>
-			<a class="mui-tab-item">
-				<span class="mui-icon mui-icon-flag"></span>
-				<span class="mui-tab-label">商城</span>
-			</a>
-			<a class="mui-tab-item">
-				<span class="mui-icon mui-icon-contact"></span>
-				<span class="mui-tab-label">个人</span>
-			</a>
-		</nav>-->
+		
 		<nav class="mui-bar mui-bar-tab mui-bg">
 			<a v-for="item in tabbar" class="mui-tab-item" v-bind:class="{'mui-active': $index === initIndex}" v-bind:href="item.url" v-on:tap="tab($index)">
 				<span class="mui-icon mui-icon-{{item.icon}}"></span>
